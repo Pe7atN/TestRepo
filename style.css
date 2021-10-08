@@ -59,13 +59,13 @@ padding: 0;
 
 #titleBar h1
 {
-    font-size: 40px;
+    font-size: 7vh;
     color: white;
 }
 
 .Years
 {
-    font-size: 50px;
+    font-size: 8vh;
     position: absolute ;
     z-index: 1;
     color:white;
