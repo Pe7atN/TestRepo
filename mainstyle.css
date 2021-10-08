@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#TopPanel
+{
+    background-color: gray;
+    width: 100%;
+    height: 7vh;
+}
+#BottomPanel
+{
+    background-color: darkgray;
+    position: absolute;
+    bottom: -100;
+    width: 100%;
+    height: 40vh;
+}
+#InformationPanel
+{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    height: 200vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#Table
+{
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+}
+.Texts
+{
+    color: black;
+}
+.Titles
+{
+   color: black;
+   position: absolute;
+   top:0;
+}
+td
+{
+    border: 3px solid black;
+}
