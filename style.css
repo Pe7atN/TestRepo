@@ -53,13 +53,19 @@ padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+
     /* overflow: hidden; */
+}
+
+#titleBar h1
+{
+    font-size: 40px;
+    color: white;
 }
 
 .Years
 {
-    font-size: 3rem;
+    font-size: 50px;
     position: absolute ;
     z-index: 1;
     color:white;
