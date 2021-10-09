@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src='LandingPageScript.js'> </script>
     <title>Document</title>
 </head>
 <body>
-    <div class='container'>
+    <div class='container' id='FirstContainer' onmouseenter="Blue('First')" onmouseleave="White('First')">
         <a href="Pesho.html">
             <div id="FirstHalf">
-                <h1 class="Years">1900-1952</h1>
+                <h1 class="Years" id='FirstPeriod'>1900-1952</h1>
             </div>
         </a>
     </div>
-    <div class='container' id='secondContainer'>
+
+    <div class='container' id='SecondContainer' onmouseenter="Blue('Second')" onmouseleave="White('Second')">
         <a href="Miro.html">
             <div id="SecondHalf">
-                <h1 class="Years">1952-now</h1>
+                <h1 class="Years" id='SecondPeriod'>1952-now</h1>
             </div>
         </a>
     </div>
