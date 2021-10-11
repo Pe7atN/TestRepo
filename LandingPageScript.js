@@ -26,16 +26,3 @@ function Leave(name)
     cont.style.width='50%';
     cont.style.filter='';  
 }
-
-
-// let h=document.getElementById(name+'Period');
-// let c=document.getElementById(name+'Container');
-// c.style.zIndex="2";
-// h.style.color='#3B9AF3';
-
-// // clearTimeout(TimeOut);
-// let cont;
-// if(name=='First')cont=document.getElementById('SecondContainer');
-// else cont=document.getElementById('FirstContainer');
-// cont.style.zIndex="1";
-// cont.style.filter='blur(4px)';

@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="LandingPageStyle.css">
+    <script src="BG.js"></script>
+    <script src="EN.js"></script>
+    <script src='Translate.js'> </script>
     <script src='LandingPageScript.js'> </script>
     <title>Document</title>
 </head>
-<body>
+<body onload="OnLoad()">
     <div class='container' id='FirstContainer' onmouseenter="Enter('First')" onmouseleave="Leave('First')">
         <a href="Pesho.html">
             <div id="FirstHalf">
@@ -25,7 +28,11 @@
         </a>
     </div>
     <div id='titleBar'>
-        <h1>Historical background of the UK - 20th century</h1>
+        <h1 id='title'>Historical background of the UK - 20th century</h1>
+        <div id='LangCont'>
+            <button id='LangButton' onclick="Toggle()"></button>
+            <p id='lang'>EN</p>
+        </div>
     </div>
 </body>
 </html>

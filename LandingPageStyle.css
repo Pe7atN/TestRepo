@@ -57,6 +57,35 @@ padding: 0;
     /* overflow: hidden; */
 }
 
+#LangCont
+{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+
+#LangButton:hover{
+    background-image: url('languageHover.png');
+}
+
+#LangButton
+{
+    width: 5vh;
+    height: 5vh;
+    border: none;
+    background-color: transparent;
+    background-image: url('language.png');
+    background-size: contain;
+}
+
+#lang
+{
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-weight: bolder;
+}
+
 #titleBar h1
 {
     font-size: 7vh;
