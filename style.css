@@ -70,12 +70,14 @@ padding: 0;
 
 .Years
 {
+    width: 100%;
     font-size: 8vh;
     position: absolute ;
     text-shadow: 6px 6px 5px rgba(0,0,0,0.72);
     z-index: 1;
     color:white;
     bottom: 10%;
-    left: 30%;
+    text-align: center;
+    font-weight: bold;
     
 }
