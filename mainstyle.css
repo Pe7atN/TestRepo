@@ -31,57 +31,74 @@
     justify-content: space-evenly;
     height: 100%;
 }
-
-#Footer
-{
-    background-color: darkgray;
-    position: absolute;
-    bottom: -100;
-    width: 100%;
-    height: 40vh;
-}
-#InformationPanel
-{
-    width: 80%;
-    background-color: rgb(255, 255, 255);
-    height: 200vh;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-#Table
+#Main
 {
     margin:auto;
-    margin-top:50px;
     width: 80%;
-    border: 1px solid black ;
+    height: 140.5vh;
+    margin-top: 2vh;
+    border: 2px solid black;
+}
+#FirstColoumn
+{
+    border-right: 1px solid black;
+    width: 9.5%;
+    float: left;
+    height: 100%;
 }
 
-.tableRow
+#SecondColoumn
 {
-    width: 100%;
-    height: 400px;
-    border: 1px solid black ;
-    margin:50px;
-    display: flex;
+    border-right: 1px solid black;
+    width: 45%;
+    float: left;
+}
+
+#ThirdColoumn
+{
+    width: 45%;
+    float: left;
 }
 
 .tableImage 
 {
-    width: 50%;
-    margin: 30px;
-}
-
-.tableImage img
-{
-    width: 100%;
-    margin-top: 30px;
-    width: 100%;
-    height: 50%;
+    border-top: 1px solid black;
+    height: 35vh;
+    width: 80%;
+    margin:auto;
 }
 
 .tableText
 {
-    width: 50%;
-    margin: 30px;
+    border-top: 1px solid black;
+    height: 35vh;
+    width: 80%;
+    margin: auto;
+}
+ 
+.Image
+{
+    margin-left: 10%;
+    margin-top: 5vh;
+    width: 80%;
+    height: 70%;
+}
+
+.Titles
+{
+    margin-top: 10%;
+    width: 100%;
+}
+
+.Texts
+{
+    margin-top: 3%;
+    width: 100%;
+    height: 50%;
+}
+#Footer
+{
+    background-color: darkgray;
+    width: 100%;
+    height: 40vh;
 }
