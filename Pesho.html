@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainstyle.css">
+    <script>sessionStorage.setItem('page','FirstHalf')</script>
+    <script src="EN.js"></script>
+    <script src="BG.js"></script>
+    <script src="Translate.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body onload="OnLoad()">
     <div id="Header">
         <div id='TitleDiv'>
-            <p id='Title'>Historical background of the UK - 20th century</p>
+            <p id='Title'>Historical background of the UK (1900-1952)</p>
         </div>
         <div id='buttonTray'>
             <button>Button 1</button>
@@ -38,18 +42,46 @@
                 
             </div> -->
         </div>
+        <div id='LangCont'>
+            <button id='LangButton' onclick="Toggle()"></button>
+            <p id='lang'>EN</p>
+        </div>
     </div>
 
     <div id="Main">
 
         <div id="FirstColoumn">
             <div id='timeline'></div>
+            <div class="timestamp">
+                <div class="leftside"><div></div></div>
+                <div class="rigthside"><p>1990</p></div>
+            </div>
+            <div class="timestamp">
+                <div class="leftside"><div></div></div>
+                <div class="rigthside"><p>1990</p></div>
+            </div>
+            <div class="timestamp">
+                <div class="leftside"><div></div></div>
+                <div class="rigthside"><p>1990</p></div>
+            </div>
+            <div class="timestamp">
+                <div class="leftside"><div></div></div>
+                <div class="rigthside"><p>1990</p></div>
+            </div>
+            <div class="timestamp">
+                <div class="leftside"><div></div></div>
+                <div class="rigthside"><p>1990</p></div>
+            </div>
+            <div class="timestamp">
+                <div class="leftside"><div></div></div>
+                <div class="rigthside"><p>1990</p></div>
+            </div>
         </div>
 
         <div id="SecondColoumn">
             <div class='tableImage'></div>
             <div class='tableText'>
-                <h2 class="Titles">
+                <h2 class="Titles" id='title2'>
                     The First World War
                 </h2>
                 <div class='TextCont'>
@@ -61,7 +93,7 @@
             </div>
             <div class='tableImage'></div>
             <div class='tableText'>
-                <h2 class="Titles">
+                <h2 class="Titles" id='title4'>
                     The Rise of Dicatorships 
                 </h2>
                 <div class='TextCont'>
@@ -72,7 +104,7 @@
             </div>
             <div class='tableImage'></div>
             <div class='tableText'>
-                <h2 class="Titles">
+                <h2 class="Titles" id='title6'>
                     The Horrors of the German Concentration Camps 
                 </h2>
                 <div class='TextCont'>
@@ -85,7 +117,7 @@
 
         <div id="ThirdColoumn">
             <div class='tableText'>
-                <h2 class="Titles">
+                <h2 class="Titles" id='title1'>
                     The End of an Age and Social Changes
                 </h2>
                 <div class='TextCont'>
@@ -96,7 +128,7 @@
             </div>
             <div class='tableImage'></div>
             <div class='tableText'>
-                <h2 class="Titles">
+                <h2 class="Titles" id='title3'>
                     The British Commonwealth of Nations
                 </h2>
                 <div class='TextCont'>
@@ -107,7 +139,7 @@
             </div>
             <div class='tableImage'></div>
             <div class='tableText'>
-                <h2 class="Titles">
+                <h2 class="Titles" id='title5'>
                     The Second World War  
                 </h2>
                 <div class='TextCont'>

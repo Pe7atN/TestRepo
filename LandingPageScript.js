@@ -1,4 +1,8 @@
 // let TimeOut;
+// window.onload=function()
+// {
+
+// }
 
 function Enter(name)
 {

@@ -1,29 +1,67 @@
+let Bulgarian,English;
+
 function ToBG()
 {
-    for(const text in BG)
+    for(const text in Bulgarian)
     {
         let el;
-        if(text!='pages')el=document.getElementById(text).innerHTML=BG[text];
+        console.log(text);
+        if(text!='pages')el=document.getElementById(text).innerHTML=Bulgarian[text];
     }
 }
 
 function ToEN()
 {
-    for(const text in EN)
+    for(const text in English)
     {
         let el;
-        if(text!='pages')el=document.getElementById(text).innerHTML=EN[text];
+        if(text!='pages')el=document.getElementById(text).innerHTML=English[text];
     }
+}
+
+function GetCurrentPageLang()
+{
+    let page=sessionStorage.getItem('page');
+    console.log(page)
+    if(page=='LandingPage')
+    {
+        Bulgarian={...BG[page]};
+        English={...EN[page]};
+    }
+    else if(page=='FirstHalf'||page=='SecondHalf')
+    {
+        Bulgarian={...BG[page]};
+        English={...EN[page]};
+        delete Bulgarian.Pages
+        delete English.Pages
+    }
+    else//______________________________________________________________________________________
+    {
+        let pageNum;
+        [page,pageNum]=page.split('-')
+        Bulgarian={...BG[page]};
+        English={...EN[page]};
+        unset(Bulgarian,'Pages')
+        unset(English,'Pages')
+    }
+    console.log(Bulgarian);
+    console.log(English);
+    
 }
 
 function OnLoad()
 {
-    sessionStorage.removeItem('lang');
-    sessionStorage.setItem('lang','EN');
-    let el=document.getElementById('title').innerHTML;
+    let L=sessionStorage.getItem('lang');
+    if(L==null)
+    {
+        sessionStorage.removeItem('lang');
+        sessionStorage.setItem('lang','EN');
+    }
     let LangLabel=document.getElementById('lang');
-    LangLabel.innerHTML='EN';
-    ToEN();
+    LangLabel.innerHTML=L;
+    GetCurrentPageLang();
+    if(L=='BG')ToBG();
+    else ToEN()
 }
 
 function Toggle()
