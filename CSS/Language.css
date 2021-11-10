@@ -4,6 +4,8 @@
     right: 10px;
     top: 15px;
     width: 5vh;
+    transform: scale(1,1);
+    transition: transform 0.1s ease-out;
 }
 
 #LangCont * 
@@ -12,7 +14,7 @@
 }
 
 #LangCont:hover{
-    transform: scale(1.1,1.1);
+    transform: scale(1.15,1.15);
     transition: transform 0.1s ease-in;
 }
 
