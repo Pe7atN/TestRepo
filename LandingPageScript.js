@@ -8,14 +8,14 @@ function Enter(name)
 {
     let c=document.getElementById(name+'Container')
     let h=document.getElementById(name+'Period');
-    c.style.width='57%';
-    h.style.color='#318DE2';
+    c.style.width='55%';
+    // h.style.color='#DB222A';
 
     let cont;
     if(name=='First')cont=document.getElementById('SecondContainer');
     else cont=document.getElementById('FirstContainer');
     cont.style.filter='blur(5px)';  
-    cont.style.width='43%';
+    cont.style.width='45%';
 }
 
 function Leave(name)

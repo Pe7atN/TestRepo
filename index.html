@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="LandingPageStyle.css">
-    <script src="BG.js"></script>
-    <script src="EN.js"></script>
-    <script>sessionStorage.setItem('page','LandingPage')</script>
-    <script src='Translate.js'> </script>
+    <link rel="stylesheet" href="CSS/LandingPageStyle.css">
+    <link rel="stylesheet" href="CSS/Language.css">
     <script src='LandingPageScript.js'> </script>
     <title>Document</title>
 </head>
 <body onload="OnLoad()">
     <div class='container' id='FirstContainer' onmouseenter="Enter('First')" onmouseleave="Leave('First')">
-        <a href="Pesho.html">
+        <a href="FirstHalf/Pesho.html">
             <div id="FirstHalf">
-                <p class="Years" id='FirstPeriod'>1900-1952</p>
+                <div class='Year'>
+                    <div></div>
+                    <p class="Years" id='FirstPeriod'>1900 - 1952</p>
+                </div>
             </div>
         </a>
     </div>
 
     <div class='container' id='SecondContainer' onmouseenter="Enter('Second')" onmouseleave="Leave('Second')">
-        <a href="Miro.html">
+        <a href="SecondHalf/Miro.html">
             <div id="SecondHalf">
-                <p class="Years" id='SecondPeriod'>1952-now</p>
+                <div class='Year'>
+                    <div></div>
+                    <p class="Years" id='SecondPeriod'>1952 - today</p>
+                </div>
             </div>
         </a>
     </div>
     <div id='titleBar'>
         <h1 id='title'>Historical background of the UK - 20th century</h1>
-        <div id='LangCont'>
-            <button id='LangButton' onclick="Toggle()"></button>
+        <div id='LangCont' onclick="Toggle()">
+            <img id='LangButton' src="Translate/language.png" alt="">
             <p id='lang'>EN</p>
         </div>
     </div>
