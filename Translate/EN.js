@@ -10,51 +10,55 @@ EN={
         'title3':'The British Commonwealth of Nations',
         'title4':'The Rise of Dicatorships',
         'title5':'The Second World War',
-        'title6':'The Horrors of the German Concentration Camps',    
-        
-        'Pages':{
-            'Page1':
-            {
-
-            },
-            'Page2':
-            {
-
-            },
-            'Page3':
-            {
-
-            },
-            'Page4':
-            {
-
-            },
-            'Page5':
-            {
-
-            },
-        }
+        'title6':'The Horrors of the German Concentration Camps'   
     },
-    'SecondHalf':{
-        'Page1':
-        {
+    'Page1.1':
+    {
 
-        },
-        'Page2':
-        {
+    },
+    'Page1.2':
+    {
 
-        },
-        'Page3':
-        {
+    },
+    'Page1.3':
+    {
 
-        },
-        'Page4':
-        {
+    },
+    'Page1.4':
+    {
 
-        },
-        'Page5':
-        {
+    },
+    'Page1.5':
+    {
 
-        },
+    },
+
+
+
+    
+    'SecondHalf':
+    {
+        'Title':'Historical background of the UK (1952-Today)',
+    
+    },
+    'Page2.1':
+    {
+
+    },
+    'Page2.2':
+    {
+
+    },
+    'Page2.3':
+    {
+
+    },
+    'Page2.4':
+    {
+
+    },
+    'Page2.5':
+    {
+
     }
 };
