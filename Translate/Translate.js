@@ -21,27 +21,9 @@ function ToEN()
 function GetCurrentPageLang()
 {
     let page=sessionStorage.getItem('page');
-    if(page=='LandingPage')
-    {
-        Bulgarian={...BG[page]};
-        English={...EN[page]};
-    }
-    else if(page=='FirstHalf'||page=='SecondHalf')
-    {
-        Bulgarian={...BG[page]};
-        English={...EN[page]};
-        delete Bulgarian.Pages
-        delete English.Pages
-    }
-    else//______________________________________________________________________________________
-    {
-        let pageNum;
-        [page,pageNum]=page.split('-')
-        Bulgarian={...BG[page]};
-        English={...EN[page]};
-        unset(Bulgarian,'Pages')
-        unset(English,'Pages')
-    }
+    if(!BG[page]||!EN[page])console.log('Language for this page was not found')
+    Bulgarian=BG[page];
+    English=EN[page];
 }
 
 function OnLoad()
@@ -51,6 +33,7 @@ function OnLoad()
     {
         sessionStorage.removeItem('lang');
         sessionStorage.setItem('lang','EN');
+        L='EN';
     }
     let LangLabel=document.getElementById('lang');
     LangLabel.innerHTML=L;
