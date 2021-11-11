@@ -22,17 +22,33 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 {
     background-image: url('../Images/churchill.png');
 }
+
+#SecondContainer
+{
+    right: 0;
+}
+
+
+#FirstContainer:hover ~ #SecondContainer
+{
+    width: 45%;
+    filter: blur(5px);
+}
+
+#FirstContainer:hover
+{
+    width: 55%!important;
+}
+#SecondContainer:hover 
+{
+    width: 55%;
+}
 .container
 {
     width: 50%;
     height: 100vh;
     position: absolute;
     transition: width 0.3s;
-}
-
-#SecondContainer
-{
-    right: 0;
 }
 
 #titleBar
@@ -97,13 +113,13 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: transform 0.15s ease-out;
 }
 
-#SecondHalf:hover .Year div
+#SecondHalf:hover>.Year>div
 {
     transform: scale(1,1);
     transition: transform 0.15s ease-in;
 }
 
-#FirstHalf:hover .Year div{
+#FirstHalf:hover>.Year>div{
     transform: scale(1,1);
     transition: transform 0.15s ease-in;
 }
