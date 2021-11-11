@@ -48,7 +48,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 50%;
     height: 100vh;
     position: absolute;
-    transition: width 0.3s;
+    transition: width 0.4s;
 }
 
 #titleBar
