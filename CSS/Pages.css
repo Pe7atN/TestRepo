@@ -1,0 +1,14 @@
+#buttonTray *
+{
+    font-size: 17px;
+    font-weight: 500;
+    color:white;
+}
+
+#buttonTray
+{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}

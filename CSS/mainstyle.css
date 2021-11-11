@@ -36,6 +36,15 @@
     width: 100%;
     height: 23vh;
 }
+#buttonTray
+{
+    position: absolute;
+   
+    bottom: 0;
+    height: 7vh;
+    width: 100%;
+    background-color: rgba(14, 33, 63, 0.192);
+}
 
 #TitleDiv
 {
@@ -165,4 +174,5 @@ a{
     background-color: rgb(44, 44, 44);
     width: 100%;
     height: 20vh;
+    bottom: 0;
 }
