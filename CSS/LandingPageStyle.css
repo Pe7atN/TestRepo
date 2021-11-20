@@ -4,6 +4,10 @@ padding: 0;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body{
+    background-color: #BECDEA;
+}
+
 #SecondHalf,#FirstHalf
 {
     width: 100%;
@@ -20,7 +24,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 #FirstHalf
 {
-    background-image: url('../Images/churchill.png');
+    background-image: url('../Images/churchill.jpg');
+    /* transform: scaleX(-1); */
 }
 
 #SecondContainer
@@ -58,9 +63,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     height: 15vh;
     /* background-color: rgba(76, 81, 83, 0.5); */
-    background-color: #548cdfe5;
+    background-color: #548cdf;
     box-shadow: 0px 5px 19px 4px rgba(17,17,17,0.5);
-    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,7 +108,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .Year div{
-    background-color: #3161aa;
+    background-color:#3775d1;
     border-radius: 30px;
     z-index: 0;
     width: 100%;

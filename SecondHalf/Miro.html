@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/mainstyle.css">
     <link rel="stylesheet" href="../CSS/MainPages.css">
     <link rel="stylesheet" href="../CSS/Language.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    
     <script src="../Translate/BG.js"></script>
     <script src="../Translate/EN.js"></script>
     <script>sessionStorage.setItem('page','SecondHalf')</script>
     <script src='../Translate/Translate.js'> </script>
+    <style>#SecondColoumn,#ThirdColoumn{width: 50%;}
+    </style>
     <title>Document</title>
 </head>
 <body onload="OnLoad()">
     <div id="Header">
         <div id='TitleDiv'>
-            <p id='Title'>Historical background of the UK (1952-Today)</p>
+            <img src="../Images/Logo.png" onclick='window.location.href="../index.html"' alt="">
+            <p id='Title'>Historical background of the UK (1900-1952)</p>
         </div>
         <div id='buttonTray'>
             <button>Button 1</button>
@@ -44,15 +50,12 @@
                 
             </div> -->
         </div>
-        <div id='LangCont' onclick="Toggle()">
-            <img id='LangButton' src="../Translate/language.png" alt="">
-            <p id='lang'>EN</p>
-        </div>
+
     </div>
 
     <div id="Main">
 
-        <div id="FirstColoumn">
+        <!-- <div id="FirstColoumn">
             <div id='timeline'></div>
             <div class="timestamp">
                 <div class="leftside"><div></div></div>
@@ -78,10 +81,10 @@
                 <div class="leftside"><div></div></div>
                 <div class="rigthside"><p>1990</p></div>
             </div>
-        </div>
+        </div> -->
 
         <div id="SecondColoumn">
-            <div class='tableImage'></div>
+            <div class='ImageCont'><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" alt="" class="tableImage"> </div>
             <div class='tableText'>
                 <h2 class="Titles" id='title2'>
                     The First World War
@@ -91,9 +94,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus quam sit amet nunc interdum pulvinar. Donec diam elit, placerat vitae semper ac, auctor in nulla. Fusce non accumsan neque. Aenean malesuada nulla id blandit tempus. Integer sollicitudin sem nec metus semper, at commodo nisi facilisis. Nullam sed purus porta, lobortis turpis suscipit, mattis risus. Nulla non ante vel eros hendrerit imperdiet a nec sapien. Donec mollis erat lectus, eu rutrum quam lacinia eu. In tempor elementum enim non dignissim. Fusce volutpat ipsum eu mi sollicitudin volutpat. Maecenas sollicitudin blandit suscipit. Mauris sollicitudin arcu at sem fringilla condimentum. Nullam ultricies finibus libero, vel scelerisque nunc sodales id. Ut id finibus erat.
                     </p>
                 </div>
-                <button class='Buttons' onclick="window.location.href='./Page1.html'">To the topic</button>
+                <button class='Buttons'>To the topic</button>
             </div>
-            <div class='tableImage'></div>
+            <div class='ImageCont'><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" alt="" class="tableImage"> </div>
             <div class='tableText'>
                 <h2 class="Titles" id='title4'>
                     The Rise of Dicatorships 
@@ -105,7 +108,7 @@
                 </div>
                 <button class='Buttons'>To the topic</button>
             </div>
-            <div class='tableImage'></div>
+            <div class='ImageCont'><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" alt="" class="tableImage"> </div>
             <div class='tableText'>
                 <h2 class="Titles" id='title6'>
                     The Horrors of the German Concentration Camps 
@@ -122,7 +125,7 @@
         <div id="ThirdColoumn">
             <div class='tableText'>
                 <h2 class="Titles" id='title1'>
-                    The End of an Age and Social Changes
+                    The Horrors of the German Concentration Camps 
                 </h2>
                 <div class='TextCont'>
                     <p class = "Texts">
@@ -131,10 +134,10 @@
                 </div>
                 <button class='Buttons'>To the topic</button>
             </div>
-            <div class='tableImage'></div>
+            <div class='ImageCont'><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" alt="" class="tableImage"> </div>
             <div class='tableText'>
                 <h2 class="Titles" id='title3'>
-                    The British Commonwealth of Nations
+                    The First World War
                 </h2>
                 <div class='TextCont'>
                     <p class = "Texts">
@@ -143,10 +146,10 @@
                 </div>
                 <button class='Buttons'>To the topic</button>
             </div>
-            <div class='tableImage'></div>
+            <div class='ImageCont'><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" alt="" class="tableImage"> </div>
             <div class='tableText'>
                 <h2 class="Titles" id='title5'>
-                    The Second World War  
+                    The Rise of Dicatorships 
                 </h2>
                 <div class='TextCont'>
                     <p class = "Texts">
@@ -155,11 +158,13 @@
                 </div>
                 <button class='Buttons'>To the topic</button>
             </div>
-            <div class='tableImage'></div>
+            <div class='ImageCont'><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" alt="" class="tableImage"> </div>
         </div>
     </div>
-    
-
+    <div id='LangCont' onclick="Toggle()">
+        <img id='LangButton' src="../Translate/language.png" alt="">
+        <p id='lang'>EN</p>
+    </div>
     <div id="Footer"><p></p></div>
 </body>
 </html>
