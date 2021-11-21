@@ -198,6 +198,111 @@ a{
 {
     background-color: rgb(44, 44, 44);
     width: 100%;
-    height: 20vh;
+    height: 40vh;
     bottom: 0;
+}
+
+.MiniFooters
+{
+    height: 35vh;
+    margin-top: 2.5vh;
+    float: left;
+    width: 32%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+.Seperator
+{
+    height: 30vh;
+    margin-top: 5vh;
+    float: left;
+    border-left: 2px rgba(255,255,255,0.7) solid;
+}
+
+.FooterTexts
+{
+    color:rgb(255, 255, 255);
+    margin-top: 2.5vh;
+    margin-left: 3vh;
+    font-size: 17px;
+}
+
+#FooterTitle
+{
+    margin-top: 2.5vh;
+    margin-left: 3vh;
+    margin-bottom: 4vh;
+    color:rgb(65, 120, 209);
+    font-size: 30px;
+}
+
+#ImageContainer
+{
+    height:120px;
+    width:120px;
+    background-color: gray;
+    border-radius: 50%;
+    border: solid 0px white;
+    float:left;
+    margin: 10px 0 0 40px;
+}
+
+#ProgrammerName
+{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    
+}
+#ImageNameCont
+{
+    height: 50%;
+    width: 90%;
+    margin-left:5%;
+}
+
+#CreatedByTitle
+{
+    color:rgb(65, 120, 209);   
+    font-size: 30px;
+    text-align: center;
+ 
+}
+
+#ProgrammerName
+{
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+}
+
+#InformationCont
+{
+    height: 50%;
+    width: 90%;
+    margin-left:5%;
+}
+
+#Grid
+{
+    height: 60%;
+    width:120px;
+    background-color: gray;
+    margin: 10px 0 0 40px;
+    float:left;
+}
+
+#Information
+{
+    width: 60%;
+    margin-left: 200px;
+    height: 80%;
+}
+
+.InformationTexts
+{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 2vh;
 }
