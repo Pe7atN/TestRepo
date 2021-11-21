@@ -7,6 +7,11 @@
 body{
     background-color: white;
 }
+html
+{
+    scroll-behavior: smooth;
+
+}
 
 ::-webkit-scrollbar-thumb
 {
@@ -73,7 +78,7 @@ body{
 #TitleDiv img:hover
 {
     transform: scale(1.1,1.1);
-    transition: 0.15s ease-in;
+    transition: transform 0.15s ease-in;
 }
 
 #Title{
@@ -118,6 +123,11 @@ body{
     box-shadow: 5px 5px 15px 0 rgb(71, 71, 71);        
 }
 
+.tableImage:hover
+{
+    object-fit: contain;
+}
+
 
 .tableText, .ImageCont
 {
@@ -132,6 +142,7 @@ body{
     overflow: visible;
     display: flex;
     justify-content: center;
+    background-color: rgb(244, 245, 248);
     
 }
 .tableText 

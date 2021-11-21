@@ -1,16 +1,61 @@
 #buttonTray *
 {
-    font-size: 17px;
-    font-weight: 500;
-    color:white;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 #buttonTray
 {
-    color:white;
-    padding-left: 20px;
+    padding-left: 25px;
     display: flex;
     align-items: center;
     justify-content: left;
     box-sizing: border-box;
+}
+
+a
+{
+    color: unset;
+}
+
+.link
+{
+    position:relative;
+    display: inline-block;
+    color:white;
+}
+
+.link::after
+{
+    content:'';
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform: scale(0,0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.link:hover::after
+{
+    transform: scale(1,1);
+    transform-origin:left;
+    transition: transform 250ms ease-out;
+
+}
+
+.link:hover{
+    transition: transform 100ms ease-in;
+}
+.arrow
+{
+    color:rgb(180, 180, 180);
+}
+
+.currentPageLink
+{
+    color:#122d58;
 }
