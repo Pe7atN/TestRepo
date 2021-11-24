@@ -63,12 +63,15 @@ a
 .ParalaxImage
 {
     width:100%;
-    height: 400px;
+    height: 500px;
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url('../Images/Picture201.jpg.png');
+    background-color: rgb(136, 39, 206);
+    z-index: 1;
+    box-shadow: inset 0px 0px 20px 8px rgba(17,17,17,0.5);
+    /* background-image: url('../Images/Picture201.jpg.png'); */
 }
 
 .IntroductionCont
@@ -77,11 +80,25 @@ a
     padding: 40px;
     background-color: rgb(244, 245, 248);
     text-align: left;
-    margin: 100px auto;
     font-size: 30px;
     font-weight: 500;
     color:rgb(46, 46, 46);
 }
+
+.TextBox
+{
+    margin:200px auto;
+    width: 80%;
+    padding:40px;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: rgb(46, 46, 46);
+    border-radius: 30px;
+    background-color: rgb(244, 245, 248);
+}
+
+
 
 .TableTitle
 {
