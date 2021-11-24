@@ -8,7 +8,7 @@ EN={
         'title1':'The End of an Age and Social Changes',
         'title2':'The First World War',    
         'title3':'The British Commonwealth of Nations',
-        'title4':'The Rise of Dicatorships',
+        'title4':'The Rise of Dictatorships',
         'title5':'The Second World War',
         'title6':'The Horrors of the German Concentration Camps'   
     },

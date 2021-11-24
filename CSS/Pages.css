@@ -87,7 +87,7 @@ a
 
 .TextBox
 {
-    margin:200px auto;
+    margin:100px auto;
     width: 80%;
     padding:40px;
     font-size: 30px;
@@ -97,8 +97,6 @@ a
     border-radius: 30px;
     background-color: rgb(244, 245, 248);
 }
-
-
 
 .TableTitle
 {
@@ -160,4 +158,32 @@ a
     color: #2E2E2E;
     width:250px;
     justify-self: flex-end;
+}
+
+#Image1
+{ 
+    height: 350px;
+    margin: 40px;
+    border-radius: 20px;
+    float:right;
+}
+
+#Image2
+{
+    height: 350px;
+    margin: 40px;
+    border-radius: 20px;
+    float:left;
+}
+
+.Title
+{
+    color:rgb(65, 120, 209);;
+    font-size:30px;
+    margin-top: 20px;
+}
+
+.Texts
+{
+    font-size:25px;
 }
