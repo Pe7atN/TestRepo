@@ -68,7 +68,7 @@ a
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
-    background-color: rgb(136, 39, 206);
+    background-color: rgb(225, 219, 230);
     z-index: 1;
     box-shadow: inset 0px 0px 20px 8px rgba(17,17,17,0.5);
     /* background-image: url('../Images/Picture201.jpg.png'); */
@@ -96,6 +96,7 @@ a
     color: rgb(46, 46, 46);
     border-radius: 30px;
     background-color: rgb(244, 245, 248);
+    overflow: auto;
 }
 
 .TableTitle
@@ -160,30 +161,65 @@ a
     justify-self: flex-end;
 }
 
-#Image1
+.RightImage
 { 
     height: 350px;
-    margin: 40px;
+    margin: 30px;
     border-radius: 20px;
     float:right;
+    margin-right:0;
 }
 
-#Image2
+.LeftImage
 {
-    height: 350px;
-    margin: 40px;
+    margin: 30px;
     border-radius: 20px;
     float:left;
+    margin-left: 0;
+}
+
+.VerticalImage
+{
+    height: 350px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px 1px rgba(17,17,17,0.5);
+}
+
+.HorizontalImage
+{
+    width: 30%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px 1px rgba(17,17,17,0.5);    
 }
 
 .Title
 {
     color:rgb(65, 120, 209);;
-    font-size:30px;
-    margin-top: 20px;
+    font-size:50px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.FirstTitle
+{
+    margin-top: 0;
+}
+
+.SubTitle
+{
+    color:rgb(65, 120, 209);;
+    font-size:40px;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 30px;
 }
 
 .Texts
 {
+    text-indent: 40px;
     font-size:25px;
 }
