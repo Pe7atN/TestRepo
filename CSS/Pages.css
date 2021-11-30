@@ -264,6 +264,24 @@ a
     font-size:25px;
 }
 
+.TextSubList
+{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.TextSubList>li,.TextList>li
+{
+    margin: 10px auto;
+}
+
+
+.TextList
+{
+    margin-top: 20px;
+    margin-left: 40px;
+}
 .listTitle
 {
     display: block;
