@@ -218,6 +218,39 @@ a
     margin-top: 30px;
 }
 
+.List 
+{
+    list-style: none;
+    display: flex;
+    padding:10px;
+    margin: 3px 3px;
+    background-color: #DFE1E9;
+    border-radius: 5px;
+}
+
+.listTable
+{
+    margin:100px auto;
+    width: 80%;
+    padding:40px;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: rgb(46, 46, 46);
+    border-radius: 30px;
+    background-color: rgb(244, 245, 248);
+    box-shadow: 8px 8px 20px 0 rgb(146, 146, 146);
+    overflow: auto;
+    display: flex;
+    
+}
+
+.listTable>ul{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .Texts
 {
     text-indent: 40px;
