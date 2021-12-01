@@ -37,11 +37,8 @@ html
 #Header
 {
     position: relative;
-    background-color: rgb(65, 120, 209);
-    /* background-image: url('india-freedom.jpg'); */
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    /* background-color: rgb(65, 120, 209); */
+    background: linear-gradient(37deg, rgb(13, 22, 192) 0%, rgba(0,172,255,1) 100%);/* background-image: url('india-freedom.jpg'); */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -55,7 +52,8 @@ html
 {
     height: 60px;
     width: 100%;
-    background-color: #3867B5;
+    /* background-color: #3867B5; */
+background: linear-gradient(37deg, rgb(25, 36, 233) 0%, rgba(24,184,255,1) 100%);
 }
 
 .sticky {
@@ -92,6 +90,7 @@ html
     display: inline;
     align-self: flex-end;
     margin-bottom: 30px;
+    margin-right: 80px;
     font-size: 50px;
     color:white;
     font-weight: bold;
@@ -131,6 +130,9 @@ html
     height: 100%;
     object-fit: cover;
     border-radius:15px;
+    background: rgb(234, 246, 255);
+    /* background: linear-gradient(0deg, rgba(220,241,255,1) 0%, rgba(155,207,246,1) 100%); */
+
     box-shadow: 5px 5px 15px 0 rgb(71, 71, 71);        
 }
 
@@ -182,6 +184,7 @@ html
     margin-top: 20px;
     width: 80%;
     height: 70%;
+    
 }
 
 .Titles

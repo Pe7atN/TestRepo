@@ -3,7 +3,7 @@
     position: absolute;
     right: 20px;
     top: 20px;
-    width: 50px;
+    width: min(3.75%,63px);
     transform: scale(1,1);
     transition: transform 0.1s ease-out;
     z-index:100;
