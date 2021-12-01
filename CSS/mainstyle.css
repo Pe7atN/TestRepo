@@ -47,15 +47,20 @@ html
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
-    height: 200px;
+    height: 210px;
     z-index: 5;
     box-shadow: 0px 5px 19px 4px rgba(17,17,17,0.5);
 }
 #buttonTray
 {
-    height: 80px;
+    height: 60px;
     width: 100%;
     background-color: #3867B5;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
 }
 
 #TitleDiv
@@ -63,7 +68,7 @@ html
     display: flex;
     flex-direction:row;
     align-items: center;
-    height: 200px;
+    height: 150px;
     padding-left: 40px;
     box-sizing: border-box;
 }
