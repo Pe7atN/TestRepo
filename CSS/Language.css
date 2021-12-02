@@ -20,7 +20,6 @@
     bottom: 60px;
     top: auto;
     width: min(3%,50px);
-    transition: opacity 250ms linear;
 }
 
 .LangCont * 
