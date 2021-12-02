@@ -79,7 +79,7 @@ a
     height: 100%;
     padding: 40px;
     background-color: rgb(244, 245, 248);
-    text-align: left;
+    text-align: justify;
     font-size: 30px;
     font-weight: 500;
     color:rgb(46, 46, 46);
@@ -215,7 +215,7 @@ a
     font-size:40px;
     font-weight: 500;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .List 
