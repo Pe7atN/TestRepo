@@ -10,10 +10,8 @@ function ScriptLoad(){
 
 function myFunction() {
     if (window.pageYOffset > sticky) {
-        console.log('sticky');
         header.classList.add("sticky");
     } else {
-        if(header.classList.contains('sticky'))
         header.classList.remove("sticky");
     }
 }
