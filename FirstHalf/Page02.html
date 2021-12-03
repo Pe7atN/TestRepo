@@ -15,7 +15,7 @@
     <script src="../script.js"></script>
     <title>The First World War</title>
 </head>
-<body onload="OnLoad()">
+<body onload="OnLoad();ScriptLoad()">
     <div id="Header">
         <div id='TitleDiv'>
             <img src="../Images/Logo.png" onclick='window.location.href="../index.html"' alt="">
@@ -26,6 +26,7 @@
             <a href="./FirstHalf.html" class='link'>1900-1952</a><p class='arrow'>&nbsp;&nbsp;>>&nbsp;&nbsp;</p>
             <p class='currentPageLink'>The First World War</p>
         </div>
+    </div>
     <div id='LangCont' class='LangCont' onclick="Toggle()">
         <img id='LangButton' src="../Translate/language.png" alt="">
         <p id='lang'>EN</p>
@@ -33,7 +34,6 @@
     <div id='LangCont-Hovering' class='LangCont' onclick="Toggle()">
         <img id='LangButton-Hovering' src="../Translate/language.png" alt="">
         <p id='lang-Hovering'>EN</p>
-    </div>
     </div>
     
     <div class='ParalaxImage' style="background-image: url('../Images/Picture120.jpg');">
