@@ -36,7 +36,9 @@ function OnLoad()
         L='EN';
     }
     let LangLabel=document.getElementById('lang');
+    let LangLabel1=document.getElementById('lang-Hovering');
     LangLabel.innerHTML=L;
+    LangLabel1.innerHTML=L;
     GetCurrentPageLang();
     if(L=='BG')ToBG();
     else ToEN()
