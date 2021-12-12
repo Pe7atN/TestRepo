@@ -1,4 +1,4 @@
-#LangCont
+.LangCont
 {
     position: absolute;
     right: 20px;
@@ -9,17 +9,30 @@
     z-index:100;
 }
 
-#LangCont * 
+#LangCont-Hovering 
+{
+    display: none;
+    background-color:#0570E6 ;
+    border-radius: 15px;
+    position: fixed;
+    padding: 10px;
+    right: 10px;
+    bottom: 60px;
+    top: auto;
+    width: min(3%,50px);
+}
+
+.LangCont * 
 {
     cursor: pointer;
 }
 
-#LangCont:hover{
+.LangCont:hover{
     transform: scale(1.15,1.15);
     transition: transform 0.1s ease-in;
 }
 
-#LangButton
+#LangButton,#LangButton-Hovering
 {
     width: 100%;
     border: none;
@@ -27,7 +40,7 @@
     /* background-image: url('language.png'); */
 }
 
-#lang
+#lang,#lang-Hovering
 {
     text-align: center;
     font-size: 20px;

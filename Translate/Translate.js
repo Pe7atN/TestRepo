@@ -36,7 +36,9 @@ function OnLoad()
         L='EN';
     }
     let LangLabel=document.getElementById('lang');
+    let LangLabel1=document.getElementById('lang-Hovering');
     LangLabel.innerHTML=L;
+    LangLabel1.innerHTML=L;
     GetCurrentPageLang();
     if(L=='BG')ToBG();
     else ToEN()
@@ -45,11 +47,13 @@ function OnLoad()
 function Toggle()
 {
     let LangLabel=document.getElementById('lang');
+    let LangLabel1=document.getElementById('lang-Hovering');
     if(sessionStorage.getItem('lang')=='EN')
     {
         sessionStorage.removeItem('lang');
         sessionStorage.setItem('lang','BG');
         LangLabel.innerHTML='BG';
+        LangLabel1.innerHTML='BG';
         ToBG();
     }
     else
@@ -57,6 +61,7 @@ function Toggle()
         sessionStorage.removeItem('lang');
         sessionStorage.setItem('lang','EN');
         LangLabel.innerHTML='EN';
+        LangLabel1.innerHTML='EN';
         ToEN();
     }
 }
